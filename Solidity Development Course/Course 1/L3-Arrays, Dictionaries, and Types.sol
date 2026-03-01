@@ -43,7 +43,9 @@ contract SimpleListStorage {
 
     function addPerson(string memory _name, uint256 _favoriteNumber) public {
          // This function will be called when we want to add a new person to the list of people
-         // This function will take two arguments, a string and a uint256
+         // This function will take two arguments, a string and a uint256. The arguments, "_name" and "_favoriteNumber"
+         // have underscores in front of the argument variables so the function does not call in the variables
+         // declared already within the smart contract.
 
          // When "memory" is added, this will temporarily save the argument passed into the function
          // so it can be written into the smart contract. Once the function has been interacted with,
