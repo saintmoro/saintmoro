@@ -1,0 +1,74 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "createSimpleStorageContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "simpleStorage",
+				"outputs": [
+					{
+						"internalType": "contract SimpleStorage",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Solidity Development Course/Lesson 2 - Interacting across Smart Contracts/L1-StorageFactory.sol": "StorageFactory"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Solidity Development Course/Lesson 2 - Interacting across Smart Contracts/L1-SimpleStorage.sol": {
+			"keccak256": "0x3e60903b17d315463764abbf7b5d46fac998dd97ea82b3a8e1218ae2f7dc7dcb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://46babea57bba031171f104a5ccba44baf5ac0aee44ec35f8ecf9be121d84ca2b",
+				"dweb:/ipfs/Qmeb4C6sreJW2ipDusbeSWFsC7ZynMRE4jTz7XxAkNh2B4"
+			]
+		},
+		"Solidity Development Course/Lesson 2 - Interacting across Smart Contracts/L1-StorageFactory.sol": {
+			"keccak256": "0xa4167a71dd8798c948d06819d796aa09a666c1311b8d34536612fada1096b869",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://49a3638dc267a7715acd0c4c00d162e78f5dd18489433a92d44ff848d88d6bb3",
+				"dweb:/ipfs/QmNRL83tvTe382aK3bQBatc8iWPYkH1bF7JUxaKra9FunQ"
+			]
+		}
+	},
+	"version": 1
+}
