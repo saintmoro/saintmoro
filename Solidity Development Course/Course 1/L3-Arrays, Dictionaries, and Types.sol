@@ -17,6 +17,8 @@ contract SimpleListStorage {
         string name;
     }
 
+    // A 'struct' is used to group multiple variable types into a new data type
+
     // To create a new variable with the newly created type, it can be created like any type
     // by writing: 'type' visibility 'variable name' = type(arguments)
 

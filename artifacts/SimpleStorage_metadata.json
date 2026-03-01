@@ -6,55 +6,64 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "favoriteNumber",
-				"outputs": [
+				"inputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"name": "People",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "favoriteNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "retrieve",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "retrievePure",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
 				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
 					{
 						"internalType": "uint256",
 						"name": "_favoriteNumber",
 						"type": "uint256"
 					}
 				],
-				"name": "store",
+				"name": "addPerson",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "nameToFavoriteNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -71,7 +80,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Solidity Development Course/Course 1/L2-Functions.sol": "SimpleStorage"
+			"Solidity Development Course/Course 1/L5-Mappings.sol": "SimpleStorage"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -85,12 +94,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Solidity Development Course/Course 1/L2-Functions.sol": {
-			"keccak256": "0x75ea5c76a7f87b4b6cba0ed6205d9c6018cfe790546ebadb18552e18e27d5e3e",
+		"Solidity Development Course/Course 1/L5-Mappings.sol": {
+			"keccak256": "0x9325137dd07161229a64e5aab93a796667d44bfce88772fd85c07c73d42b6d9a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2dcb45200568b500d0bc84815037af88570635da03e5fae4a71191333e933f86",
-				"dweb:/ipfs/QmaN6FDKxakeZ4sY3CvMWqoedV39AMtoVheqMrgNJTYDDU"
+				"bzz-raw://ab29322e1bbe7a261728ea76b3b2d0cd874b047c00bc8fdc24680b446f5ff481",
+				"dweb:/ipfs/QmchW78HtEUZi5kYx3MDJ6dt2g7mg3qntHwkMQHzzi776T"
 			]
 		}
 	},
