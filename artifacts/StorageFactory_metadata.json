@@ -37,11 +37,6 @@
 						"internalType": "uint256",
 						"name": "_simpleStorageIndex",
 						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_newSimpleStorageNumber",
-						"type": "uint256"
 					}
 				],
 				"name": "sfStore",
@@ -86,11 +81,11 @@
 			]
 		},
 		"Solidity Development Course/Lesson 2 - Interacting across Smart Contracts/L2-StorageFactory.sol": {
-			"keccak256": "0xc921f5ffd8a815e620ba72223ac7db802d7928c0281a0bc1d7935b1b7834f290",
+			"keccak256": "0xfe8421acd8ab7e62897aab17e15cab1ff2633fcec092c202db942776c19a42f8",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6968c704c416071deb3240f8a251374ecbd7df9adc2b68c67f0a3d5550f78e45",
-				"dweb:/ipfs/QmVR13P38Q5wyarr3oj4WDRsdB8qHqkhsez6RiQxyMzAGs"
+				"bzz-raw://02566f6d727f90e2d0454ba6b42dfdc2a7399367ab975461afa5076ae26203f3",
+				"dweb:/ipfs/Qmd6hxKAM9vFxjBANN7sajqBTaEjdzdYgan8926K8Msdat"
 			]
 		}
 	},

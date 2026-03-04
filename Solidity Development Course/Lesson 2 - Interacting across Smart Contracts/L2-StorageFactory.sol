@@ -25,31 +25,32 @@ contract StorageFactory {
     }
 
     // The function below will interact from within the SimpleStorage contract
+
     function sfStore(uint256 _simpleStorageIndex, uint256 _newSimpleStorageNumber) public {
-        // When interacting with functions of an imported smart contarct, the smart contract address, 
-        // and the ABI, or function selector are both needed.
-
-        // ABI - Application Binary Interface
-        // The ABI tells the code how exactly the smart contract can interact with another contract
-
-        // -----------------
-        
         // Below, we will call one of the SimpleStorage contracts created from within 
         // the StorageFactory contract to interact with.
 
         // The structure of this function is as described:
         // 1. A new SimpleStorage contract is created, saved in the variable mySimpleStorage
         // 2. The mySimpleStorage contract is called from one of the created contracts when createSimpleStorageContract was executed
+
         SimpleStorage mySimpleStorage = listOfSimpleStorageContracts[_simpleStorageIndex];
+        mySimpleStorage.store(_newSimpleStorageNumber);
+    }
 
         // From creating a new SimpleStorage contract above, we can access the functions within the SimpleStorage contract.
         // The command below allows the 'store' function to be called, but no information is returned because there is no
         // function that calls the information yet
-        mySimpleStorage.store(_newSimpleStorageNumber);
-    }
-        function sfGet(uint256 _simpleStorageIndex) public view returns(uint256) {
-            SimpleStorage mySimpleStorage = listOfSimpleStorageContracts[_simpleStorageIndex];
-            return mySimpleStorage.retrieve();
-        }
+
+    function sfGet(uint256 _simpleStorageIndex) public view returns(uint256){
+        SimpleStorage mySimpleStorage = listOfSimpleStorageContracts[_simpleStorageIndex];
+        return mySimpleStorage.retrieve();
     }
 }
+
+
+// When interacting with functions of an imported smart contarct, the smart contract address, 
+// and the ABI, or function selector are both needed.
+
+// ABI - Application Binary Interface
+// The ABI tells the code how exactly the smart contract can interact with another contract
