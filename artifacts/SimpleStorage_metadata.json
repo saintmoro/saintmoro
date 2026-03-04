@@ -8,12 +8,30 @@
 			{
 				"inputs": [
 					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_favoriteNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "addPerson",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "People",
+				"name": "listOfPeople",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -49,16 +67,24 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "retrieve",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
 						"name": "_favoriteNumber",
 						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
 					}
 				],
 				"name": "store",
@@ -80,7 +106,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Solidity Development Course/Lesson 2 - Interacting across Smart Contracts/L1-SimpleStorage.sol": "SimpleStorage"
+			"Solidity Development Course/Lesson 2 - Interacting across Smart Contracts/SimpleStorage.sol": "SimpleStorage"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -94,12 +120,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"Solidity Development Course/Lesson 2 - Interacting across Smart Contracts/L1-SimpleStorage.sol": {
-			"keccak256": "0x3e60903b17d315463764abbf7b5d46fac998dd97ea82b3a8e1218ae2f7dc7dcb",
-			"license": "MIT",
+		"Solidity Development Course/Lesson 2 - Interacting across Smart Contracts/SimpleStorage.sol": {
+			"keccak256": "0x4406ff9682920371479cb7e5adeec4c169dcc4569f65a5feb353c9c78cacdc07",
 			"urls": [
-				"bzz-raw://46babea57bba031171f104a5ccba44baf5ac0aee44ec35f8ecf9be121d84ca2b",
-				"dweb:/ipfs/Qmeb4C6sreJW2ipDusbeSWFsC7ZynMRE4jTz7XxAkNh2B4"
+				"bzz-raw://9030e96a696918bb8be4bf6be212975822fcfd4131a5cced5cbafcb2ca22aa0d",
+				"dweb:/ipfs/QmZ1xz5s9W81DBtWK8zAcMVH4H9GMJPKCfbf5xToRqcjzd"
 			]
 		}
 	},
