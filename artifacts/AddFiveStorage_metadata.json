@@ -80,10 +80,23 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "sayHello",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_favoriteNumber",
+						"name": "_newNumber",
 						"type": "uint256"
 					}
 				],
@@ -106,7 +119,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Solidity Development Course/Lesson 2 - Interacting across Smart Contracts/L3-SimpleStorage.sol": "SimpleStorage"
+			"Solidity Development Course/Lesson 2 - Interacting across Smart Contracts/L3-Inheritance.sol": "AddFiveStorage"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -120,6 +133,14 @@
 		"remappings": []
 	},
 	"sources": {
+		"Solidity Development Course/Lesson 2 - Interacting across Smart Contracts/L3-Inheritance.sol": {
+			"keccak256": "0xdfff32629362b91acfad48d0e29dcd2cdb1203b4330eb5dfdf3c8d57fb42c5ef",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ddbb9f22ae5d58077d8c47212472a47a6283c21f02ae94bae5e8b44b5b5a5023",
+				"dweb:/ipfs/QmWztRQW4C57a4AAZGhQJfBNPm2Ea6urppX7VFj9Ui2bX2"
+			]
+		},
 		"Solidity Development Course/Lesson 2 - Interacting across Smart Contracts/L3-SimpleStorage.sol": {
 			"keccak256": "0xd543e8e5f63fd424cb9b873243b467ca3f5b7d8217c22130539fa3bad61e9b29",
 			"license": "MIT",

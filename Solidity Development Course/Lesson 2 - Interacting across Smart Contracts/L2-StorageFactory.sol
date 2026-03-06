@@ -4,7 +4,7 @@ pragma solidity ^0.8.19;
 
 // Create a named import of the SimpleStorage contract from the Solidity file
 // The SimpleStorage file is different from the L1-SimpleStorage file, as this lesson does not include the "_name" variable to be stored
-import {SimpleStorage} from "./SimpleStorage.sol";
+import {SimpleStorage} from "./L2-SimpleStorage.sol";
 
 // Create a new smart contract that creates new SimpleStorage smart contracts
 contract StorageFactory {

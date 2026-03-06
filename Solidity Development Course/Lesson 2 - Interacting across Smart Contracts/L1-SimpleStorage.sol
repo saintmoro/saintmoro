@@ -18,7 +18,7 @@ contract SimpleStorage {
     mapping(string => uint256) public nameToFavoriteNumber;
 
     // Create a new function to save a person to the dynamic array, People. Set the visibility to public
-    // so the smart contract can be interacted with after it is deployed
+    // so the smart contract can be interacted with after it is deployed.
     function store(uint256 _favoriteNumber, string memory _name) public {
         // Add a new person to the people array with the array's inherent .push() function
         People.push(Person(_favoriteNumber, _name));
