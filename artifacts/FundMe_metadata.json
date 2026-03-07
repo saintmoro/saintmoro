@@ -1,0 +1,120 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "funder",
+						"type": "address"
+					}
+				],
+				"name": "addressToAmountFunded",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountFunded",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "fund",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "funders",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "minimumUSD",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Solidity Development Course/Lesson 3 - FundMe project/FundMe.sol": "FundMe"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol": {
+			"keccak256": "0x257a8d28fa83d3d942547c8e129ef465e4b5f3f31171e7be4739a4c98da6b4f0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6d39e11b1dc7b9b8ccdabbc9be442ab7cda4a81c748f57e316dcb1bcb4a28bf9",
+				"dweb:/ipfs/QmaG6vz6W6iEUBsbHSBob5mdcitYxWjoygxREHpsJHfWrS"
+			]
+		},
+		"Solidity Development Course/Lesson 3 - FundMe project/FundMe.sol": {
+			"keccak256": "0xb3b9f7d2fe1cefbebcfd724aacca8aa069581c9e2946f59cfdc8a286181971dc",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ff01328b16cec0175086d2be68b0fab856ad9a6f5055cbf25a3e730673e92e7e",
+				"dweb:/ipfs/QmSunvRTrvACaM4wxfXGLQZuqecPGKQCwZai3XCfJpg6zY"
+			]
+		},
+		"Solidity Development Course/Lesson 3 - FundMe project/PriceConverter.sol": {
+			"keccak256": "0xdc207967eaa061d152c8c5175bc9e9bb2153462a33f00f0e88e23d6548b3370a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6fb5cec2e810d51450e0781a69988fe3aa30736cbff9fb8af57f39aa773e8da6",
+				"dweb:/ipfs/QmPkJRSXcvEtDkAu5Sc5H68hDpmATyv16D2Up2nnrpn4Qm"
+			]
+		}
+	},
+	"version": 1
+}

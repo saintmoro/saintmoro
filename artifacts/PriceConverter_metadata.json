@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Solidity Development Course/Lesson 3 - FundMe project/PriceConverter.sol": "PriceConverter"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol": {
+			"keccak256": "0x257a8d28fa83d3d942547c8e129ef465e4b5f3f31171e7be4739a4c98da6b4f0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6d39e11b1dc7b9b8ccdabbc9be442ab7cda4a81c748f57e316dcb1bcb4a28bf9",
+				"dweb:/ipfs/QmaG6vz6W6iEUBsbHSBob5mdcitYxWjoygxREHpsJHfWrS"
+			]
+		},
+		"Solidity Development Course/Lesson 3 - FundMe project/PriceConverter.sol": {
+			"keccak256": "0xdc207967eaa061d152c8c5175bc9e9bb2153462a33f00f0e88e23d6548b3370a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6fb5cec2e810d51450e0781a69988fe3aa30736cbff9fb8af57f39aa773e8da6",
+				"dweb:/ipfs/QmPkJRSXcvEtDkAu5Sc5H68hDpmATyv16D2Up2nnrpn4Qm"
+			]
+		}
+	},
+	"version": 1
+}
