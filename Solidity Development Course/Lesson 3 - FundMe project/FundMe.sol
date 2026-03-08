@@ -12,7 +12,6 @@ import {PriceConverter} from "./PriceConverter.sol";
 
 contract FundMe {
     using PriceConverter for uint256;
-
     // Goals of this function:
     // 1. Allow users to send money to my Ethereum address
     // 2. Have a minimum $ sent
@@ -22,6 +21,9 @@ contract FundMe {
 
     // Create an array to save the list of funders who have sent funds
     address[] public funders;
+
+    // Create a global variable for the owner (deployer) of this contract
+    address public owner;
 
     // Create a mapping to see how much each funder sent
     mapping(address funder => uint256 amountFunded) public addressToAmountFunded;
@@ -48,7 +50,11 @@ contract FundMe {
         // commands, and any remaining gas to execute the entire function will be returned to the initiator.        
     }
 
-    function withdraw() public {
+    constructor() {
+        owner = msg.sender;
+    }
+
+    function withdraw() public onlyOwner {
         // For loop:
         // Starting index, ending index, step count
         for(uint256 funderIndex = 0; funderIndex < funders.length; funderIndex++) {
@@ -56,7 +62,38 @@ contract FundMe {
             addressToAmountFunded[funder] = 0;
         }
 
+        // Reset the array after gathering the funders and the amounts they've sent
         funders = new address[](0);
+
+        // There are three different ways to send Etherem to a different wallet:
+        // 1. Transfer (will error and revert the transaction if unsuccessfel)
+        // ----------
+        // msg.sender.transfer(address(this).balance)
+        // ----------
+        // The msg.sender must be typecasted into a payable address, for example:
+        // payable(msg.sender).transfer(address(this).balance)
+        //
+        // 2. Send (will return a boolean if the amount was sent or not)
+        // ----------
+        // bool sendSuccess = payable(msg.sender).send(address(this).balance)
+        // require(sendSuccess, "Send failed")
+        // ----------
+        //
+        // 3. Call (returns two variables, boolean "callSuccess", bytes memory dataReturned)
+        // (bool callSuccess, ) = payable(msg.sender).call{value: address(this).balance}("")
+        // require(callSuccess, "Call failed")
+
+        (bool callSuccess, ) = payable(msg.sender).call{value: address(this).balance}("");
+        require(callSuccess, "Call failed to transfer money to wallet");
     }
 
+
+    // Sets a permanent condition onto the contract and can be called as a keyword listed on the function. 
+    // The underscore placement significantly matters.
+    // If it is BELOW the commands, it will run all commands of a function AFTER the command in the modifier, and
+    // if it is ABOVE the commands, it will run all commands of a function BEFORE the command in the modifier
+    modifier onlyOwner() {
+        require(msg.sender == owner, "The sender of this call is not the owner of this contract");
+        _;
+    }
 }

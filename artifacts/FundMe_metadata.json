@@ -1,10 +1,15 @@
 {
 	"compiler": {
-		"version": "0.8.19+commit.7dd6d404"
+		"version": "0.8.31+commit.fd3a2265"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
 			{
 				"inputs": [
 					{
@@ -62,6 +67,26 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -79,7 +104,7 @@
 		"compilationTarget": {
 			"Solidity Development Course/Lesson 3 - FundMe project/FundMe.sol": "FundMe"
 		},
-		"evmVersion": "paris",
+		"evmVersion": "osaka",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -100,11 +125,11 @@
 			]
 		},
 		"Solidity Development Course/Lesson 3 - FundMe project/FundMe.sol": {
-			"keccak256": "0xb3b9f7d2fe1cefbebcfd724aacca8aa069581c9e2946f59cfdc8a286181971dc",
+			"keccak256": "0xf34f66f49c390be81242b2123dea8c7c60b17c8be4ebe0fe2a908607798a64e8",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ff01328b16cec0175086d2be68b0fab856ad9a6f5055cbf25a3e730673e92e7e",
-				"dweb:/ipfs/QmSunvRTrvACaM4wxfXGLQZuqecPGKQCwZai3XCfJpg6zY"
+				"bzz-raw://8d00010ae23781343ecd72c79d15c702a29c073d190118f24e8e52de0c9625da",
+				"dweb:/ipfs/QmUHduy1sKi6jkKV8FciBAhxVCT26w677aBGx1n4gTWwAF"
 			]
 		},
 		"Solidity Development Course/Lesson 3 - FundMe project/PriceConverter.sol": {
